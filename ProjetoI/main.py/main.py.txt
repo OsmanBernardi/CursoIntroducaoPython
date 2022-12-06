@@ -1,0 +1,18 @@
+import view
+import gravarplanilha
+
+def main():
+    listadespesas = ["alimentacao", "energia", "transporte"]
+
+    # entrada
+    dadosentrada    = view.entrada(lista_despesas)
+
+    # processamento
+    salario = dados_entrada[0]
+    despesas = dados_entrada[1]
+    resultado = gravarplanilha(lista_despesas,valorsalario,valores_despesas)
+
+    # saida
+   view.saida(lista_despesas,valorsalario,valores_despesas, resultado)
+if __name__ == "main":
+    main()

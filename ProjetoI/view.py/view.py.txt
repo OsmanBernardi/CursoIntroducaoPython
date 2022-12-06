@@ -1,0 +1,11 @@
+def entrada(listadespesas):
+
+    valorsalario = float(input("Digite o seu salario: "))
+
+    # lista para guardar o valor de cada despesa
+    valoresdespesas = float(input("Digite a dispesa"))   
+
+    listaresult = [valorsalario,valoresdespesas]
+
+def saida(valorsalario,valoresdespesas, resultado):
+    print(f"\n\n (=) Resultado = {resultado}")

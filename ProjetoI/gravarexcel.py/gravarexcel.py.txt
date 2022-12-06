@@ -1,0 +1,28 @@
+from openpyxl import Workbook
+
+def salvarexcel(lista_despesas,valor_salario,valores_despesas):
+
+    resultado = salario
+
+    arquivo = Workbook()
+
+    # cria uma planilha chamada Novembro;
+    Novembro = arquivo.active
+    Novembro.title = "Novembro"
+
+    # cria uma coluna chamada Receitas e registre o seu salario;
+    Novembro["A1"] = "Receitas"
+    Novembro["A2"] = valor_salario
+
+    # cria uma coluna chamada Despesas ao lado a coluna Receitas
+    Novembro["C1"] = "Despesas"
+    Novembro["C2"] = totaldespesas
+    
+    # cris uma coluna chamada Resultado 
+    Novembro["D1"] = "Resultado"
+    Novembro["D2"] = Novembro[A2] - Novembro[B1]
+
+    # crie um arquivo chamado orcamento.xlsx;
+    arquivo.save('orcamento.xlsx')
+
+    return resultado
